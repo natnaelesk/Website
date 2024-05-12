@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Natnael Eskinder</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Core Bootstrap CSS-->
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/natnaelesk/bootstrap@main/style.css">
+
+        <style>
+            body{
+                background: #f2f2f2;
+            }
+            .cardd{
+                height: 400px !important ;
+                overflow: hidden !important;
+            }
+            .card-item{
+                width: 70%;
+            }
+            #immg{
+                height: 400px;
+                width: 300px;
+                background: #595959;
+                background-image: url('images/hope.jpg');
+                background-position: center;
+                background-size: cover;
+                background-blend-mode: hard-light;
+                opacity: 0.998;
+            }
+            #immg2{
+                height: 400px;
+                width: 300px;
+                background: #595959;
+                background-image: url('images/uni.jpg'); 
+                background-position: center;
+                background-size: cover;
+                background-blend-mode: hard-light;
+                opacity: 0.998;
+            }
+            #about{
+                background: #e4e4e4 !important ;
+            }
+            @media (max-width : 980px)  {
+               .card-item p{
+                font-size: 12px;
+               } 
+            }
+            @media (max-width : 775px)  {
+               .cardd #immg , .cardd #immg2{
+                display: none;
+               }
+               .card-item{
+                width: 100%;
+                text-align: center;
+               }
+               .card-item{
+                overflow: scroll !important;
+               }
+            }
+        </style>
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="./home.html"><span class="fw-bolder " style="color: #3c6e71;">Natnael Esk</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                            <li class="nav-item"><a onclick="sendEmail()" class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <header class="py-5">
+                <div class="container px-5 pb-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-xxl-5">
+                            <div class="text-center text-xxl-start">
+                                <div class="fs-3 fw-light text-muted">Welcome! Let me introduce myself.</div>
+                                <h1 class="display-3 fw-bolder "><span class=" d-inline" style="color: #3c6e71;">hello, I am Natnael Eskinder</span></h1>
+                                <div class="fs-5 fw-light text-muted mb-5"> a student of Computer Science at Ambo University, Woliso Campus.</div>
+
+                                
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3"  >
+                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" style="background-color: #3c6e71; border: 0px;" onclick="sendEmail()" href="contact.html">Contact Me</a>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xxl-7">
+                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                                
+                                <div class="profile bg-gradient-primary-to-secondary" style=" background: #595959;">
+                                    <img class="profile-img" src="images/photo_2024-05-11_21-25-29-removebg-preview.png"  alt="me" style="mix-blend-mode: luminosity;" />
+                                    
+                                    <div class="dots-1">
+                                        <img src="images/dot1.svg" alt="">
+                                    </div>
+                                    <div class="dots-2">
+                                        <img src="images/dot2.svg" alt="">
+                                    </div>
+                                    <div class="dots-3">
+                                        <img src="images/dot1.svg" alt="">
+                                    </div>
+                                    <div class="dots-4">
+                                        <img src="images/dot2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="bg-light py-5" id="about">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder"><span class=" d-inline" style="color: #3c6e71;">About Me</span></h2>
+                                <p class="lead fw-light mb-4">Hello, I'm Natnael Eskinder</p>
+                                <p class="text-muted ">
+                                    A Technology lover from Harar, Ethiopia. Growing up amidst Harar's rich culture, my passion for technology was ignited early on, leading me to pursue Computer Science. Let me share some stories from my high school and university journey that highlight my connection to the world of Computer Science.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="">
+                    <div class="container px-5 mb-5">
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                               
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center cardd">
+                                            <div class="p-5 card-item">
+                                                <h2 class="fw-bolder" style="color: #3c6e71;">High School</h2>
+                                                <p >
+                                                My interest in Computer Science started in 7th grade when I joined tech clubs at school. Since then, I've been actively participating in these clubs. In 9th grade, my IT teacher taught me C++, and I even showed my work in class and during family events. But C++ was hard for me to understand completely because I was young.
+                                                </p>
+                                            </div>
+                                            <div id="immg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex align-items-center cardd">
+                                            <div class="p-5 card-item">
+                                                <h2 class="fw-bolder" style="color: #3c6e71;">University</h2>
+                                                <p>
+                                                    In university, I delved deeper into Computer Science, taking charge of my own learning journey. I joined online classes, earning certificates along the way. Over the past two years, I've been self-teaching various software-related skills. On the frontend, I've mastered HTML, CSS, Bootstrap, Tailwind, JavaScript, and React. For backend development, I've become proficient in Python, Django, and SQLite. Currently, I'm expanding my knowledge into penetration testing to advance into cybersecurity.. You can explore some of my frontend development projects in my <a target="_blank" href="https://natnaelesk.github.io/NatnaelEsk/">official portfolio.
+                                                    </a> </p>
+                                            </div>
+                                            <div id="immg2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Natnael Eskinder 2024</div></div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+</html>
